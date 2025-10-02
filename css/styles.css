@@ -118,7 +118,7 @@ a:hover {
 .sobre,
 .contato,
 .portfolio {
-  padding: 2em;
+  padding: 5rem;
   min-height: 100vh;
 }
 
@@ -132,8 +132,8 @@ a:hover {
 
 .menu a:active,
 .menu a:hover {
-  background-color: teal;
-  color: white;
+  background-color: #52F2D2;
+  color: #B37D69;
 }
 
 a {
@@ -153,7 +153,7 @@ a {
 }
 
 .sobre p {
-  color:pink;
+  color:#736560;
   text-indent: 1.4em;
   margin-bottom: 1.4em;
   text-align: justify;
@@ -171,13 +171,14 @@ a {
 }
 
 .sobre .avatar {
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
+  clip-path: circle(70%);
   margin-left: 2em;
 }
 
 @media (min-width: 600px) {
   .sobre .avatar {
-    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    /*clip-path: circle(80%);*/
     float: right;
   }
 }
@@ -203,63 +204,21 @@ a {
   }
 }
 
-.flip-card {
-  height: 180px;
-  perspective: 1000px;
-}
-
-.flip-card:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 3s;
-}
-
-.card-front, 
-.card-back {
-  backface-visibility: hidden;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.card-back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, .7);
-  height: 180px;
-  width: 100%;
-  transform: rotateY(180deg);
-}
-
 .portfolio figure {
   text-align: center;
+  
 }
 
-.img-portfolio {
-  height: 180px;
-  width: 100%;
-  object-fit: cover;
-  object-position: left bottom;
-  transition: transform 500ms;
-}
 
-/* .img-portfolio:hover {
-  transform: scale(1.2) rotate(-2deg);
-} */
-
-.contato .icons {
-  text-align: center;
-}
 
 .contato a {
   color: whitesmoke;
   font-size: 4em;
   transition: text-shadow 1s;
+}
+
+.rodape{
+  text-align: center;
+
 }
 
