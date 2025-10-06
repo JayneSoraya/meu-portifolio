@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('../img/fundo.jpg');
+  background-color: #6A9D93;
   background-size: auto 100vh; 
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
@@ -28,6 +28,7 @@ body {
     font-size: 18px;
   }
 }
+
 /* breakpoint */
 @media (min-width: 1200px) {
   body {
@@ -43,17 +44,17 @@ header {
   align-items: center;
 }
 
-.menu {
-  background-color: white;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  z-index: 1;
+.menu{
+    background-color: #6A9D93;
+    position:  fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
 }
 
-.menu ul {
-  display: flex;
-  justify-content: space-around;
+.menu ul{
+    display: flex;
+    justify-content: space-around;
 }
 
 .menu li {
@@ -100,7 +101,7 @@ a:hover {
 
 .site-subtitle, 
 .site-title {
-  color: whitesmoke;
+  color: #736560;
   text-align: center;
 }
 
@@ -117,8 +118,8 @@ a:hover {
 
 .sobre,
 .contato,
-.portfolio {
-  padding: 5rem;
+.portifolio {
+  padding: 3rem;
   min-height: 100vh;
 }
 
@@ -130,30 +131,17 @@ a:hover {
   }
 }
 
-.menu a:active,
-.menu a:hover {
-  background-color: #52F2D2;
-  color: #B37D69;
-}
-
-a {
-  color: teal;
-  text-decoration: none;
-}
-
-
 .sobre h2,
 .contato h2,
-.portfolio h2 {
+.portifolio h2 {
   font-family: 'Press Start 2P', cursive;
-  color:#736560;
-  text-decoration: none;
+  color: #B37D69;
   margin-bottom: 1.5em;
   font-size: 2em;
 }
 
 .sobre p {
-  color:#736560;
+  color: white;
   text-indent: 1.4em;
   margin-bottom: 1.4em;
   text-align: justify;
@@ -171,32 +159,30 @@ a {
 }
 
 .sobre .avatar {
-  /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
-  clip-path: circle(70%);
+  clip-path: circle(65%);
   margin-left: 2em;
 }
 
 @media (min-width: 600px) {
   .sobre .avatar {
-    /*clip-path: circle(80%);*/
+    clip-path: circle(65%);
     float: right;
   }
 }
 
-
-.portfolio .grid {
+.portifolio .grid {
   display: grid;
   gap: 2em;
 }
 
 @media (min-width: 560px) {
-  .portfolio .grid {
+  .portifolio .grid {
     grid-template-columns: 240px 240px;
   }
 }
 
 @media (min-width: 880px) {
-  .portfolio .grid {
+  .portifolio .grid {
     grid-template-columns: repeat(3, 260px);
     align-content: center;
     justify-content: center;
@@ -204,21 +190,46 @@ a {
   }
 }
 
-.portfolio figure {
+.flip-card {
+  height: 180px;
+  perspective: 1000px;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.portifolio figure {
   text-align: center;
-  
 }
 
-
-
-.contato a {
-  color: whitesmoke;
-  font-size: 4em;
-  transition: text-shadow 1s;
-}
-
-.rodape{
-  text-align: center;
+.img-portifolio {
+  height: 180px;
+  width: auto;
 
 }
-
