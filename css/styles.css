@@ -244,13 +244,19 @@ a:hover {
   
 }
 
+.btn-link{
+  font-size: 0.8rem;
+  
+}
+
 .portifolio figure {
   text-align: center;
   margin: 10;
 }
 
 .img-portifolio {
-  height: 200px;
+  height: 180px;
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
