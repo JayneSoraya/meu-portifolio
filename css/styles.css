@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #6A9D93;
+  background-color: #002B5B;
   background-size: auto 100vh; 
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
@@ -45,7 +45,7 @@ header {
 }
 
 .menu{
-    background-color: #6A9D93;
+    background-color: #002B5B;
     position:  fixed;
     width: 100vw;
     top: 0;
@@ -69,12 +69,12 @@ header {
 
 .menu a:active,
 .menu a:hover {
-  background-color: teal;
-  color: white;
+  background-color: #FFFFFF;
+  color: #002B5B;
 }
 
 a {
-  color: teal;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -101,7 +101,7 @@ a:hover {
 
 .site-subtitle, 
 .site-title {
-  color: #736560;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -113,6 +113,7 @@ a:hover {
 .site-subtitle {
  font-style: italic;
  font-family: 'Press Start 2P', cursive;
+ font-display: auto;
  line-height: 1.8em;
 }
 
@@ -135,14 +136,14 @@ a:hover {
 .contato h2,
 .portifolio h2 {
   font-family: 'Press Start 2P', cursive;
-  color: #B37D69;
+  color: #FFFFFF;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   font-size: 2rem;
 }
 
 .sobre p {
-  color: white;
+  color: #FFFFFF;
   text-indent: 1.4em;
   margin-bottom: 1.4em;
   text-align: justify;
@@ -171,6 +172,9 @@ a:hover {
   }
 }
 
+.portifolio a{
+  color:#002B5B;
+}
 .portifolio .grid {
   display: grid;
   gap: 4rem;
@@ -224,8 +228,8 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, .7);
-  height: 180px;
+  background-color: white;
+  height: 260px;
   width: 100%;
   border-radius: 10px;
   transform: rotateY(180deg);
@@ -234,13 +238,14 @@ a:hover {
 }
 
 .card-back h3{
-  font-size: 1rem;
-  color: #444;
+  font-size: 1.2rem;
+  color: #002B5B;
 }
 
 .card-back p{
-  font-size: 0.9rem;
-  color: #B37D69;
+  padding-top: 6%;
+  font-size: 1.1rem;
+  color: #002B5B;
   
 }
 
@@ -255,7 +260,7 @@ a:hover {
 }
 
 .img-portifolio {
-  height: 180px;
+  height: 260px;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -275,7 +280,7 @@ a:hover {
 }
 
 .contato .icons a:hover{
-    color: #736560;
+    color: #FFFFFF;
     transform: scale(1.2);
 }
 
@@ -287,9 +292,11 @@ a:hover {
 
   .contato .icons a {
     font-size: 2.2rem;
+    font-display: auto;
   }
 }
 
 .rodape{
   justify-items: center;
+  color: #FFFFFF;
 }
