@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name= "description" content="Portfólio profissional de Jayne Soraya com projetos e experiência em TI, DevOps e Desenvolvimento.">
     <title>Portifólio Jayne Soraya</title>
-    <link rel="stylesheet" href="../css/styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+       body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro&display=swap"rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous" ></script>
-</head>
+    <script async src ="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous" ></script>
+    <link rel="preload" href="../css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  </head>
 <body>
     <header>
         <nav class="menu">
@@ -31,8 +37,8 @@
             <figure class="avatar">
               <picture>
                 <source srcset="../img/jayne.webp" type="image/webp">
-                <source srcset="../img.jayne.png" type="image/png">
-                <img src = "../img/jayne.png" alt="Foto de Jayne Soraya sentada na grama sorrindo" loading="lazy" width="280" height="280">
+                <source srcset="../img/jayne.png" type="image/png">
+                  <img src = "../img/jayne.png" alt="Foto de Jayne Soraya sentada na grama sorrindo" loading="lazy" >
               </picture>
             </figure>
 
@@ -52,10 +58,10 @@
                     <picture>
                       <source srcset="../img/mulheresFelizes.webp" type="image/webp">
                       <source srcset="../img/mulheresFelizes.jpg" type="image/jpeg">
-                      <img class="img-portifolio" src = "../img/mulheresFelizes.jpg" alt = "mulheres felizes" loading="lazy" width="300" height="260">
+                       <img class="img-portifolio" src = "../img/mulheresFelizes.jpg" alt = "mulheres felizes" loading="lazy">
                     </picture>
                     </figure>
-                  <div class="card-back"s>
+                  <div class="card-back">
                     <h3>Projeto App PLP</h3>
                       <p>Criei o documento de requisitos das Promotoras Legais Populares (PLPs).</p>
                       <a href="https://github.com/JayneSoraya/projeto-plp-araraquara/blob/main/README.md" target="_blank" class="btn-link">Ver projeto no Git</a>
@@ -69,7 +75,7 @@
                   <picture>
                     <source srcset="../img/auditoria.webp" type="image/webp">
                     <source srcset="../img/auditoria.jpg" type="image/jpeg">
-                    <img class="img-portifolio" src="../img/auditoria.jpg" alt = "Mulher olhando papeis" loading="lazy" width="300" height="260">
+                     <img class="img-portifolio" src="../img/auditoria.jpg" alt = "Mulher olhando papeis" loading="lazy">
                   </picture> 
                 </figure>
                 <div class="card-back">
@@ -83,8 +89,12 @@
             <div class="flip-card">
               <div class="card">
                 <figure class="card-front">
-                  <img class="img-portifolio" src="../img/alura.png" alt = "Logo merssão Alura">
-              </figure>
+                  <picture>
+                    <source srcset="../img/alura.webp" type="image/webp">
+                    <source srcset="../img/alura.jpg" type="image/jpg">
+                      <img class="img-portifolio" src="../img/alura.png" alt = "Logo merssão Alura"  loading="lazy">
+                  </picture>
+                </figure>
                 <div class="card-back">
                   <h3>Irmerssões Alura</h3>
                   <p>Usado como láboratório, faço as aulas usando a plataforma da Alura, o famosso mão na massa</p>
@@ -96,8 +106,12 @@
             <div class="flip-card">
               <div class="card">
                 <figure class="card-front">
-                  <img class="img-portifolio" src="../img/leigosetroianos.jpg" alt = "Logo Leigos e Troianos">
-                </figure>
+                  <picture>
+                    <source srcset="../img/leigosetroianos.webp" type="image/webp">
+                    <source srcset="../img/leigosetroianos.jpg" type="image/jpg">
+                      <img class="img-portifolio" src="../img/leigosetroianos.jpg" alt = "Logo Leigos e Troianos"  loading="lazy" >
+                  </picture>
+                  </figure>
                 <div class="card-back">
                   <h3>Leigos e Troianos</h3>
                   <p>Desenvolvi um site no Google Sites para automatizar horários, coletar dados de NPS e enviar pesquisas por e-mail via AppScript.</p>
@@ -109,7 +123,11 @@
            <div class="flip-card">
               <div class="card">
                 <figure class="card-front">
-                  <img class="img-portifolio" src="../img/empreendasenac.jpg" alt = "empreenda senac logo">
+                  <picture>
+                    <source srcset="../img/empreendasenac.webp" type="image/webp">
+                    <source srcset="../img/empreendasenac.jpg" type="image/jpg">  
+                      <img class="img-portifolio" src="../img/empreendasenac.jpg" alt = "empreenda senac logo"  loading="lazy" >
+                  </picture>
                 </figure>
                 <div class="card-back">
                   <h3>Empreenda Senac</h3>

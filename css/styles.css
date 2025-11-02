@@ -113,7 +113,6 @@ a:hover {
 .site-subtitle {
  font-style: italic;
  font-family: 'Press Start 2P', cursive;
- font-display: auto;
  line-height: 1.8em;
 }
 
@@ -297,6 +296,7 @@ a:hover {
 }
 
 .rodape{
+  display: grid;
   justify-items: center;
   color: #FFFFFF;
 }
